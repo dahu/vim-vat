@@ -20,3 +20,32 @@ The `:DBRead` command supports completion of `.vat` files (sqlite3
 databases) and the files within them.
 
 The normal Vim commands `:e` and `:w` also work for Vim Vat files.
+
+Using Vim Vat
+~~~~~~~~~~~~~
+
+  vim test.vat://foo.txt
+
+Type something in this new file and `:wq` out.
+
+  file test.vat
+
+  test.vat: SQLite 3.x database
+
+Yeah, baby!
+
+  vim test.vat://foo.txt
+
+Make some changes and `:w` to save them. Then:
+
+  :DBRead t<tab>bar.txt
+
+Type something in this new file and `:w` to save. Then:
+
+  :DBRead t<tab>some/long/path/baz.txt
+
+Type something in this new file and `:wq` out. From your shell again:
+
+  sqlite3 test.vat 'select * from data'
+
+Happy Hacking!
