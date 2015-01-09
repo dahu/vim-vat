@@ -1,0 +1,20 @@
+Vim Vat
+-------
+
+__A pile of files is just not Hipp__
+
+TIP: If you like Vim Vat and want to share the W00t!, I'm grateful for
+https://www.gittip.com/bairuidahu/[tips] or
+http://of-vim-and-vigor.blogspot.com/[beverages].
+
+NOTE: Vim Vat is not intended for serious use.
+
+NOTE: Vim Vat depends on http://www.sqlite.org/[SQLite]
+
+`:DBRead db-file.vat://path/to/file.type`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `:DBRead` command supports completion of `.vat` files (sqlite3
+databases) and the files within them.
+
+The normal Vim commands `:e` and `:w` also work for Vim Vat files.

@@ -1,0 +1,29 @@
+*vat.txt*	Vim global plugin for storing files in an sqlite3 DB
+
+
+
+			VIM REFERENCE MANUAL	by Barry Arthur
+
+
+Help on using vat                                                    *vat*
+
+1. Introduction				|vat-intro|
+
+==============================================================================
+ 1. INTRODUCTION                                                  *vat-intro*
+
+Vim Vat stores files in an SQLite Database instead of a pile of files.
+
+NOTE: Vim Vat is not intended for serious use.
+
+                                              *vat-dbread* *:DBRead* *DBRead*
+:DBRead~
+
+The `:DBRead` command supports completion of `.vat` files (sqlite3
+databases) and the files within them.
+
+The normal Vim commands `:e` and `:w` also work for Vim Vat files.
+
+
+Template From: https://github.com/dahu/Area-41/
+ vim:tw=78:ts=8:ft=help:norl:
