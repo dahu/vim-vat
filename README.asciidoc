@@ -11,8 +11,10 @@ NOTE: Vim Vat is not intended for serious use.
 
 NOTE: Vim Vat depends on http://www.sqlite.org/[SQLite]
 
-`:DBRead db-file.vat://path/to/file.type`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DBRead
+~~~~~~
+
+  :DBRead db-file.vat://path/to/file.type
 
 The `:DBRead` command supports completion of `.vat` files (sqlite3
 databases) and the files within them.
